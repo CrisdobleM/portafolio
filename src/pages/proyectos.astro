@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Proyectos y Prototipos | Portafolio">
+  <main class="max-w-5xl mx-auto px-6 py-12 text-gray-200">
+    <!-- Encabezado -->
+    <div class="mb-10 pb-6 border-b border-gray-800">
+      <span class="text-xs uppercase tracking-widest text-cyan-400 font-semibold">Evidencia 04</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Proyectos de Software y Prototipos</h1>
+      <p class="text-gray-400 mt-2 text-sm sm:text-base">
+        Sistemas de software, prototipos de hardware embebido y arquitecturas construidas con evidencias técnicas comprobables.
+      </p>
+    </div>
+
+    <!-- Fichas de Proyectos -->
+    <div class="space-y-8 mb-12">
+      <!-- Proyecto 1: Lotería Mazahua Digital -->
+      <article class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-cyan-500/50 transition">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-800">
+            Hardware Embebido & Software Web
+          </span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-yellow-900/60 text-yellow-300">
+            Estado: En Fase de Pruebas
+          </span>
+        </div>
+        <h2 class="text-2xl font-bold text-white mb-2">Lotería Mazahua Digital Interactiva</h2>
+        <p class="text-xs text-gray-400 mb-4">Contexto: Proyecto de Divulgación Cultural y Tecnológica • 2026</p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed mb-4">
+          <strong>Problema y Propósito:</strong> Preservar y difundir el vocabulario de la lengua mazahua en escuelas primarias mediante una plataforma lúdica interactiva que combina tarjetas físicas con sensores electrónicos y retroalimentación audiovisual en pantalla.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs mb-4">
+          <div class="bg-gray-950 p-3 rounded-lg border border-gray-800">
+            <strong class="text-white block mb-1">Tecnologías Utilizadas:</strong>
+            ESP32 / Arduino, Lector RFID RC522, JavaScript, Astro, Tailwind CSS, Buzzer acústico y display LCD.
+          </div>
+          <div class="bg-gray-950 p-3 rounded-lg border border-gray-800">
+            <strong class="text-white block mb-1">Rol y Tareas Desarrolladas:</strong>
+            Desarrollo de firmware en C++ para lectura de módulos RFID, integración de frontend web y serialización de datos.
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-gray-800 text-xs">
+          <span class="text-gray-400">Resultados: Validación con 20 tarjetas interactivas bilingües.</span>
+          <span class="text-cyan-400 font-mono">Evidencia física y lógica documentada</span>
+        </div>
+      </article>
+
+      <!-- Proyecto 2: Moblux Web -->
+      <article class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-cyan-500/50 transition">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-blue-950 text-blue-300 border border-blue-800">
+            Desarrollo Web & Negocios
+          </span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-green-900/60 text-green-300">
+            Estado: Finalizado
+          </span>
+        </div>
+        <h2 class="text-2xl font-bold text-white mb-2">Plataforma Web Moblux</h2>
+        <p class="text-xs text-gray-400 mb-4">Contexto: Proyecto Académico Integrador • 2025 - 2026</p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed mb-4">
+          <strong>Problema y Propósito:</strong> Diseñar la presencia digital y catálogo corporativo para una empresa sustentable de mobiliario ecológico, garantizando velocidad de carga y adaptabilidad total para dispositivos móviles.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs mb-4">
+          <div class="bg-gray-950 p-3 rounded-lg border border-gray-800">
+            <strong class="text-white block mb-1">Tecnologías Utilizadas:</strong>
+            HTML5, CSS3, JavaScript, Tailwind CSS, Figma para prototipado y Git para versionado colaborativo.
+          </div>
+          <div class="bg-gray-950 p-3 rounded-lg border border-gray-800">
+            <strong class="text-white block mb-1">Rol y Tareas Desarrolladas:</strong>
+            Maquetación responsiva de interfaz, optimización de componentes visuales y diseño del flujo de navegación de usuario.
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-gray-800 text-xs">
+          <span class="text-gray-400">Dificultades: Armonizar paleta visual ecológica con alta legibilidad en modo oscuro.</span>
+          <span class="text-green-400 font-mono">Presentación y layout concluidos</span>
+        </div>
+      </article>
+
+      <!-- Proyecto 3: Portafolio Web Profesional -->
+      <article class="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-cyan-500/50 transition">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-indigo-950 text-indigo-300 border border-indigo-800">
+            DevOps & Jamstack
+          </span>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-green-900/60 text-green-300">
+            Estado: En Producción Activa
+          </span>
+        </div>
+        <h2 class="text-2xl font-bold text-white mb-2">Portafolio Web de Ingeniería con GitHub Actions</h2>
+        <p class="text-xs text-gray-400 mb-4">Contexto: Proyecto de Identidad Profesional y DevOps • 2026</p>
+        
+        <p class="text-sm text-gray-300 leading-relaxed mb-4">
+          <strong>Problema y Propósito:</strong> Centralizar competencias, evidencias académicas y proyectos de ingeniería bajo un pipeline CI/CD automatizado con tiempos de carga óptimos y arquitectura estática.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs mb-4">
+          <div class="bg-gray-950 p-3 rounded-lg border border-gray-800">
+            <strong class="text-white block mb-1">Tecnologías Utilizadas:</strong>
+            Astro Framework, Tailwind CSS, GitHub Actions, Git, GitHub Pages.
+          </div>
+          <div class="bg-gray-950 p-3 rounded-lg border border-gray-800">
+            <strong class="text-white block mb-1">Rol y Tareas Desarrolladas:</strong>
+            Configuración integral del flujo de despliegue automatizado YAML, optimización de assets estáticos y arquitectura de componentes.
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-gray-800 text-xs">
+          <span class="text-gray-400">Verificable en: https://github.com/CrisdobleM/portafolio</span>
+          <a href="https://github.com/CrisdobleM/portafolio" target="_blank" class="text-blue-400 hover:underline">Ver repositorio público ↗</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Reflexión de Cierre -->
+    <section class="bg-gradient-to-br from-cyan-950/40 to-gray-900 border border-cyan-900/50 rounded-xl p-6">
+      <h2 class="text-xl font-bold text-white mb-3">Reflexión de Cierre: Competencias y Áreas de Mejora</h2>
+      <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+        El proyecto que mejor demuestra mis competencias es la <strong>Lotería Mazahua Digital</strong>, ya que no se limita a un entorno de software convencional, sino que integra firmware, protocolos de lectura física de tarjetas y experiencia de usuario para atender una necesidad educativa concreta. Para llevarlo a un siguiente nivel técnico, implementaré una API en la nube con FastAPI y bases de datos centralizadas para registrar estadísticas de aprendizaje escolar en tiempo real.
+      </p>
+    </section>
+
+    <div class="mt-10">
+      <a href="/portafolio/" class="inline-flex items-center gap-2 text-sm text-cyan-400 hover:text-cyan-300 transition">
+        ← Volver al panel principal
+      </a>
+    </div>
+  </main>
+</Layout>

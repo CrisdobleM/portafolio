@@ -1,0 +1,161 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Creatividad e Innovación | Portafolio">
+  <main class="max-w-5xl mx-auto px-6 py-12 text-gray-200">
+    <!-- Encabezado -->
+    <div class="mb-10 pb-6 border-b border-gray-800">
+      <span class="text-xs uppercase tracking-widest text-blue-400 font-semibold">Evidencia 01</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Creatividad: Innovación Universitaria</h1>
+      <p class="text-gray-400 mt-2 text-sm sm:text-base">
+        Propuestas para transformar la experiencia de la comunidad universitaria mediante prototipado ágil y retroalimentación directa.
+      </p>
+    </div>
+
+    <!-- Problema Observado -->
+    <section class="mb-12 bg-gray-900/60 border border-gray-800 rounded-xl p-6">
+      <h2 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+        1. Problema Observado
+      </h2>
+      <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+        En las facultades y campus universitarios existe un cuello de botella recurrente en el acceso, reserva y préstamo de material técnico (kits de desarrollo, tarjetas de microcontroladores y equipo de laboratorio). Los registros en bitácoras físicas o solicitudes presenciales generan tiempos muertos de hasta 40 minutos, falta de certeza sobre inventario disponible y devoluciones fuera de plazo sin trazabilidad.
+      </p>
+    </section>
+
+    <!-- Mapa Mental / Ideas Generadas -->
+    <section class="mb-12">
+      <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+        2. Mapa Mental e Ideas de Solución
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-gray-500 uppercase">Idea A</span>
+            <h3 class="text-lg font-bold text-white mt-1 mb-2">Módulo Físico con Tarjeta RFID</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Dispensador o casillero automatizado de material gestionado por lector RFID con la credencial del estudiante.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-800 text-xs text-yellow-400">
+            <strong>Descarte:</strong> Requiere infraestructura física y presupuesto de cerrajería electromecánica inicial.
+          </div>
+        </div>
+
+        <div class="bg-gray-900 border-2 border-blue-500/70 rounded-xl p-5 flex flex-col justify-between shadow-lg shadow-blue-950/30">
+          <div>
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-bold text-blue-400 uppercase">Idea B (Seleccionada)</span>
+              <span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded-full font-semibold">Elegida</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mt-1 mb-2">Plataforma Web Móvil de Reserva y Préstamo</h3>
+            <p class="text-sm text-gray-300 leading-relaxed">
+              Aplicación web ligera para consulta en tiempo real del inventario, reserva anticipada con código QR y validación inmediata en ventanilla.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-800 text-xs text-green-400">
+            <strong>Criterio:</strong> Máximo impacto inmediato, costo cero de despliegue y compatibilidad universal con teléfonos móviles.
+          </div>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-gray-500 uppercase">Idea C</span>
+            <h3 class="text-lg font-bold text-white mt-1 mb-2">Bot de Mensajería para Notificaciones</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Bot en Telegram/WhatsApp que avise disponibilidad de equipo y fechas límite de entrega a los alumnos.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-gray-800 text-xs text-yellow-400">
+            <strong>Descarte:</strong> No resuelve el control de inventario ni la verificación formal de reservas.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prototipo Navegable / Boceto Digital -->
+    <section class="mb-12">
+      <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+        3. Prototipo Navegable: Sistema de Reserva Universitaria
+      </h2>
+      
+      <div class="bg-gray-950 border border-gray-800 rounded-xl p-6">
+        <div class="flex items-center justify-between pb-4 mb-4 border-b border-gray-800 text-xs text-gray-400">
+          <span>Vista interactiva: Catálogo de Laboratorio y Préstamo</span>
+          <span class="bg-emerald-500/10 text-emerald-400 px-2.5 py-1 rounded-full border border-emerald-500/20 font-mono">Modo Demo</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="inventario-prototipo">
+          <div class="bg-gray-900 p-4 rounded-lg border border-gray-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start">
+                <h4 class="font-bold text-white text-base">Kit Arduino Uno R3</h4>
+                <span class="text-xs bg-green-900/60 text-green-300 px-2 py-0.5 rounded">8 Disp.</span>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Incluye cables jumper, protoboard y sensores básicos.</p>
+            </div>
+            <button onclick="alert('Reserva simulada con éxito para Kit Arduino. Código QR: #LAB-ARD-9921')" class="mt-4 w-full py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded transition">
+              Reservar ahora
+            </button>
+          </div>
+
+          <div class="bg-gray-900 p-4 rounded-lg border border-gray-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start">
+                <h4 class="font-bold text-white text-base">Módulo ESP32 Wi-Fi / BLE</h4>
+                <span class="text-xs bg-green-900/60 text-green-300 px-2 py-0.5 rounded">4 Disp.</span>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Placa de desarrollo IoT con doble núcleo y conectividad de red.</p>
+            </div>
+            <button onclick="alert('Reserva simulada con éxito para Módulo ESP32. Código QR: #LAB-ESP-1044')" class="mt-4 w-full py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded transition">
+              Reservar ahora
+            </button>
+          </div>
+
+          <div class="bg-gray-900 p-4 rounded-lg border border-gray-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start">
+                <h4 class="font-bold text-white text-base">Multímetro Digital</h4>
+                <span class="text-xs bg-yellow-900/60 text-yellow-300 px-2 py-0.5 rounded">1 Disp.</span>
+              </div>
+              <p class="text-xs text-gray-400 mt-2">Instrumento de medición con puntas y comprobación de continuidad.</p>
+            </div>
+            <button onclick="alert('Reserva simulada con éxito para Multímetro. Código QR: #LAB-MLT-3301')" class="mt-4 w-full py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded transition">
+              Reservar ahora
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Retroalimentación de Usuario -->
+    <section class="mb-12 bg-gray-900/40 border border-gray-800 rounded-xl p-6">
+      <h2 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+        4. Retroalimentación de Usuario Real
+      </h2>
+      <div class="border-l-4 border-blue-500 pl-4 py-1 italic text-gray-300 text-sm sm:text-base">
+        "Poder ver en menos de diez segundos si quedan placas ESP32 disponibles antes de formarme en la coordinación ahorra mucho tiempo. Sugeriría agregar un contador con el tiempo límite de entrega para evitar retrasos."
+      </div>
+      <p class="text-xs text-gray-500 mt-2 font-mono">— Estudiante de Ingeniería Informática (Prueba de interfaz).</p>
+    </section>
+
+    <!-- Reflexión de Cierre -->
+    <section class="bg-gradient-to-br from-blue-950/40 to-gray-900 border border-blue-900/50 rounded-xl p-6">
+      <h2 class="text-xl font-bold text-white mb-3">Reflexión de Cierre: ¿Por qué aporta valor?</h2>
+      <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+        Esta propuesta aporta valor tangible porque digitaliza un proceso burocrático cotidiano con tecnología accesible y disponible para cualquier estudiante con un navegador. En lugar de requerir costosas modificaciones de hardware, optimiza el tiempo lectivo efectivo de los estudiantes y docentes, reduce pérdidas en el inventario institucional y demuestra cómo la ingeniería de software resuelve problemáticas humanas inmediatas con eficiencia de recursos.
+      </p>
+    </section>
+
+    <div class="mt-10">
+      <a href="/portafolio/" class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 transition">
+        ← Volver al panel principal
+      </a>
+    </div>
+  </main>
+</Layout>

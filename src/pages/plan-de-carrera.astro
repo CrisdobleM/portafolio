@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Plan de Carrera | Portafolio">
+  <main class="max-w-5xl mx-auto px-6 py-12 text-gray-200">
+    <!-- Encabezado -->
+    <div class="mb-10 pb-6 border-b border-gray-800">
+      <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Evidencia 05</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Plan de Carrera y Brecha de Habilidades</h1>
+      <p class="text-gray-400 mt-2 text-sm sm:text-base">
+        Investigación del mercado profesional de Ingeniería Informática, diagnóstico comparativo y cronograma formativo a 6 meses.
+      </p>
+    </div>
+
+    <!-- Perfiles Investigados -->
+    <section class="mb-10">
+      <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+        1. Perfiles Profesionales Investigados
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <span class="text-xs font-bold text-amber-400 uppercase">Perfil A</span>
+          <h3 class="text-lg font-bold text-white mt-1 mb-2">Ingeniero Backend & APIs (Python / Java)</h3>
+          <p class="text-xs text-gray-300 leading-relaxed mb-3">
+            Especialista encargado de la lógica de negocio del servidor, diseño de arquitecturas REST/GraphQL, modelado de bases de datos relacionales y no relacionales, seguridad de endpoints y despliegue en contenedores.
+          </p>
+          <span class="text-[11px] text-gray-500 font-mono block">Fuentes: Ofertas laborales LinkedIn Jobs, Indeed México (2026).</span>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <span class="text-xs font-bold text-amber-400 uppercase">Perfil B</span>
+          <h3 class="text-lg font-bold text-white mt-1 mb-2">Ingeniero de Sistemas Embebidos e IoT</h3>
+          <p class="text-xs text-gray-300 leading-relaxed mb-3">
+            Desarrollador enfocado en integración hardware-software, programación de microcontroladores (C/C++), protocolos de comunicación industrial/red (MQTT, SPI, I2C) y telemetría hacia servicios web.
+          </p>
+          <span class="text-[11px] text-gray-500 font-mono block">Fuentes: Bolsas de trabajo especializadas en manufactura y tecnología de sistemas embebidos.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa de Brechas de Habilidades -->
+    <section class="mb-12">
+      <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+        2. Mapa de Brechas de Habilidades (Gap Analysis)
+      </h2>
+
+      <div class="overflow-x-auto bg-gray-900 border border-gray-800 rounded-xl">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-gray-950 text-xs text-gray-400 uppercase border-b border-gray-800">
+            <tr>
+              <th class="px-5 py-3.5">Competencia Exigida</th>
+              <th class="px-5 py-3.5">Nivel Actual</th>
+              <th class="px-5 py-3.5">Brecha Identificada</th>
+              <th class="px-5 py-3.5">Acción Correctiva</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-800 text-gray-300">
+            <tr>
+              <td class="px-5 py-3.5 font-medium text-white">Desarrollo Backend Avanzado</td>
+              <td class="px-5 py-3.5 text-blue-400">Intermedio (FastAPI / MySQL)</td>
+              <td class="px-5 py-3.5 text-yellow-400">Manejo de ORM avanzado, caché (Redis) y testing automatizado.</td>
+              <td class="px-5 py-3.5 text-xs text-gray-400">Construcción de API con pytest y Docker.</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3.5 font-medium text-white">Contenedores y DevOps</td>
+              <td class="px-5 py-3.5 text-blue-400">Básico (Git y CI/CD en GitHub)</td>
+              <td class="px-5 py-3.5 text-yellow-400">Falta dominio en Dockerfile, Compose y despliegue en VPS/Cloud.</td>
+              <td class="px-5 py-3.5 text-xs text-gray-400">Curso práctico de Docker y despliegue de contenedores.</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3.5 font-medium text-white">Sistemas Embebidos / Firmware</td>
+              <td class="px-5 py-3.5 text-blue-400">Intermedio (Arduino / ESP32)</td>
+              <td class="px-5 py-3.5 text-yellow-400">Transmisión de telemetría segura mediante protocolo MQTT y TLS.</td>
+              <td class="px-5 py-3.5 text-xs text-gray-400">Proyecto de estación de monitoreo IoT conectada a broker en la nube.</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3.5 font-medium text-white">Inglés Técnico Profesional</td>
+              <td class="px-5 py-3.5 text-blue-400">Intermedio B1 (Lectura técnica fluida)</td>
+              <td class="px-5 py-3.5 text-yellow-400">Fluidez verbal en entrevistas técnicas y standup meetings.</td>
+              <td class="px-5 py-3.5 text-xs text-gray-400">Práctica conversacional enfocada en vocabulario de software.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Plan de Formación a 6 Meses -->
+    <section class="mb-12">
+      <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+        3. Plan de Formación Intensivo (6 Meses)
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <span class="text-xs font-bold text-amber-400">Meses 1 y 2</span>
+          <h3 class="font-bold text-white mt-1 mb-2">Dominio Backend & Pruebas</h3>
+          <ul class="text-xs text-gray-400 space-y-1.5 list-disc list-inside">
+            <li>Profundización en FastAPI y autenticación JWT/OAuth2.</li>
+            <li>Pruebas unitarias y de integración con Pytest.</li>
+            <li>Optimización de consultas SQL en MySQL.</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <span class="text-xs font-bold text-amber-400">Meses 3 y 4</span>
+          <h3 class="font-bold text-white mt-1 mb-2">Contenedores y Nube</h3>
+          <ul class="text-xs text-gray-400 space-y-1.5 list-disc list-inside">
+            <li>Dockerización completa de aplicaciones web y APIs.</li>
+            <li>Orquestación local con Docker Compose.</li>
+            <li>Despliegue y configuración de bases de datos en servicios cloud.</li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5">
+          <span class="text-xs font-bold text-amber-400">Meses 5 y 6</span>
+          <h3 class="font-bold text-white mt-1 mb-2">Proyecto Integrador & Certificación</h3>
+          <ul class="text-xs text-gray-400 space-y-1.5 list-disc list-inside">
+            <li>Publicación de un sistema integral que conecte hardware IoT con backend web.</li>
+            <li>Preparación y obtención de certificación técnica fundamental (Cloud o DB).</li>
+            <li>Simulaciones de entrevistas técnicas en inglés.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reflexión de Cierre -->
+    <section class="bg-gradient-to-br from-amber-950/40 to-gray-900 border border-amber-900/50 rounded-xl p-6">
+      <h2 class="text-xl font-bold text-white mb-3">Reflexión de Cierre: Priorización de Competencias</h2>
+      <p class="text-gray-300 leading-relaxed text-sm sm:text-base">
+        La competencia que he decidido priorizar es el <strong>desarrollo backend robusto junto con la contenerización (Docker)</strong>. Contar con bases sólidas en frontend o circuitos es valioso, pero la capacidad de construir servidores seguros, testeados y capaces de comunicarse eficientemente con bases de datos o dispositivos periféricos es el núcleo que conecta cualquier solución tecnológica moderna y representa el diferenciador con mayor demanda en el mercado profesional actual.
+      </p>
+    </section>
+
+    <div class="mt-10">
+      <a href="/portafolio/" class="inline-flex items-center gap-2 text-sm text-amber-400 hover:text-amber-300 transition">
+        ← Volver al panel principal
+      </a>
+    </div>
+  </main>
+</Layout>
